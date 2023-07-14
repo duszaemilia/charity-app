@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import HomeHeader from "./HomeHeader";
 import HomeThreeColumns from "./HomeThreeColumns";
+import HomeSimpleSteps from "./HomeSimpleSteps";
 import {app} from "../../configs/firebase";
 import { getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged  } from 'firebase/auth';
 import { useAuthState } from 'react-firebase-hooks/auth';
@@ -38,6 +39,7 @@ export default function Home() {
                 user ? <button onClick={logout}>Log out</button> : <button onClick={login}>Log in</button>
             }
             <HomeThreeColumns/>
+            <HomeSimpleSteps/>
         </>
     )
 }
