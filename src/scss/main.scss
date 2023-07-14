@@ -3,5 +3,11 @@
 
 @import "settings/fonts";
 @import "settings/colors";
+@import "settings/variables";
+@import "elements/buttons";
 
 @import "base";
+
+@import "loginRegister";
+@import "navigation";
+@import "HomeHeader";
