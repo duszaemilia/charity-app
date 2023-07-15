@@ -8,7 +8,8 @@ export default function Navigation() {
                 to="#"
                 duration={500}
                 smooth={true}
-            >                <button className="btn btn-active">Start</button>
+            >
+                <button className="btn btn-active">Start</button>
             </Link>
             <Link
                 to="simpleSteps"
@@ -17,7 +18,10 @@ export default function Navigation() {
             >
                 <button className="btn">O co chodzi?</button>
             </Link>
-            <Link to="#">
+            <Link to="aboutUs"
+                  duration={500}
+                  smooth={true}
+            >
                 <button className="btn">O nas</button>
             </Link>
             <Link to="#">
