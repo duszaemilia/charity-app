@@ -24,7 +24,10 @@ export default function Navigation() {
             >
                 <button className="btn">O nas</button>
             </Link>
-            <Link to="#">
+            <Link to="whoWeHelp"
+                  duration={500}
+                  smooth={true}
+            >
                 <button className="btn">Fundacja i organizacje</button>
             </Link>
             <Link to="contact"

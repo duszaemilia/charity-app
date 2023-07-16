@@ -34,7 +34,7 @@ import HomeWhoWeHelpDisplay from "./HomeWhoWeHelpDisplay";
         },
     ]
 
-    export default function Foundations() {
+    export default function Organisations() {
         return (
         <HomeWhoWeHelpDisplay institutions={organisations}/>
     )
