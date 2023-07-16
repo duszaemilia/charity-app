@@ -3,6 +3,7 @@ import separator from "../../assets/Decoration.svg"
 import {Link, Route, Routes} from "react-router-dom";
 import Foundations from "./Foundations";
 import Organizations from "./Organizations";
+import LocalCollections from "./LocalCollections";
 
 
 export default function HomeWhoWeHelp() {
@@ -11,13 +12,13 @@ export default function HomeWhoWeHelp() {
             <h2 className="whoWeHelp__title">Komu pomagamy?</h2>
             <img src={separator} alt="separator" className="separator"/>
             <nav className="whoWeHelp__navigation">
-                <Link to="/fundacje" className="whoWeHelp__link">
+                <Link to="/" className="whoWeHelp__link">
                     <button className="whoWeHelp__button btn btn-active">Fundacjom</button>
                 </Link>
                 <Link to="/organizacje" className="whoWeHelp__link">
                     <button className="whoWeHelp__button btn">Organizacjom<br/>pozarządowym</button>
                 </Link>
-                <Link to="/" className="whoWeHelp__link">
+                <Link to="/zbiorki" className="whoWeHelp__link">
                     <button className="whoWeHelp__button btn">Lokalnym<br/>zbiórkom</button>
                 </Link>
             </nav>
@@ -26,8 +27,9 @@ export default function HomeWhoWeHelp() {
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
             </p>
             <Routes>
-                <Route path="/fundacje" element={ <Foundations/> } />
+                <Route path="/" element={ <Foundations/> } />
                 <Route path="/organizacje" element={ <Organizations/> } />
+                <Route path="/zbiorki" element={ <LocalCollections/> } />
             </Routes>
         </section>
     )
