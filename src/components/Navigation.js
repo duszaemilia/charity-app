@@ -27,7 +27,10 @@ export default function Navigation() {
             <Link to="#">
                 <button className="btn">Fundacja i organizacje</button>
             </Link>
-            <Link to="#">
+            <Link to="contact"
+                  duration={500}
+                  smooth={true}
+            >
                 <button className="btn">Kontakt</button>
             </Link>
         </nav>

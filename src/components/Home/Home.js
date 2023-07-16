@@ -4,6 +4,7 @@ import HomeThreeColumns from "./HomeThreeColumns";
 import HomeSimpleSteps from "./HomeSimpleSteps";
 import HomeAbout from "./HomeAbout";
 import HomeWhoWeHelp from "./HomeWhoWeHelp"
+import HomeContact from "./HomeContact"
 import {app} from "../../configs/firebase";
 import { getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged  } from 'firebase/auth';
 import { useAuthState } from 'react-firebase-hooks/auth';
@@ -45,6 +46,7 @@ export default function Home() {
             <HomeSimpleSteps/>
             <HomeAbout/>
             <HomeWhoWeHelp/>
+            <HomeContact/>
         </>
     )
 }
