@@ -2,8 +2,8 @@ import React from "react";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
-import Signup from "./components/Signup";
-import Logout from "./components/Logout";
+import Signup from "./pages/Signup";
+import Logout from "./pages/Logout";
 
 function App() {
     return (

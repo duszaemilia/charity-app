@@ -1,5 +1,5 @@
 import React from "react";
-import HomeWhoWeHelpDisplay from "./HomeWhoWeHelpDisplay";
+import HomeWhoWeHelpPagination from "./HomeWhoWeHelpPagination";
 
 const localCollections = [
     {
@@ -22,6 +22,6 @@ const localCollections = [
 
 export default function LocalCollections() {
     return (
-        <HomeWhoWeHelpDisplay institutions={localCollections}/>
+        <HomeWhoWeHelpPagination institutions={localCollections}/>
     )
 }

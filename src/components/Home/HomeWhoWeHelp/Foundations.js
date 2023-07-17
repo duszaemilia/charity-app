@@ -1,5 +1,5 @@
 import React from "react";
-import HomeWhoWeHelpDisplay from "./HomeWhoWeHelpDisplay";
+import HomeWhoWeHelpPagination from "./HomeWhoWeHelpPagination";
 
 
 const foundations = [
@@ -41,7 +41,7 @@ const foundations = [
     {
         name: 'Fundacja 8',
         goal: 'Cel i misja:',
-        items: 'Rzeczy'
+        items: 'ubrania, jedzenie, ciepłe koce'
     },
     {
         name: 'Fundacja 9',
@@ -52,6 +52,6 @@ const foundations = [
 
 export default function Foundations() {
     return (
-        <HomeWhoWeHelpDisplay institutions={foundations}/>
+        <HomeWhoWeHelpPagination institutions={foundations}/>
     )
 }

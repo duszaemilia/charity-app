@@ -1,7 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import LoginRegister from "../LoginRegister";
-import Navigation from "../Navigation";
+import LoginRegister from "./HomeHeader/LoginRegister";
+import Navigation from "./HomeHeader/Navigation";
 import separator from "../../assets/Decoration.svg"
 import heroImage from "../../assets/Home-Hero-Image.jpg"
 

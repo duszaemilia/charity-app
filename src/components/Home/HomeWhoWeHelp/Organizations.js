@@ -1,5 +1,5 @@
 import React from "react";
-import HomeWhoWeHelpDisplay from "./HomeWhoWeHelpDisplay";
+import HomeWhoWeHelpPagination from "./HomeWhoWeHelpPagination";
 
     const organisations = [
         {
@@ -36,6 +36,6 @@ import HomeWhoWeHelpDisplay from "./HomeWhoWeHelpDisplay";
 
     export default function Organisations() {
         return (
-        <HomeWhoWeHelpDisplay institutions={organisations}/>
+        <HomeWhoWeHelpPagination institutions={organisations}/>
     )
     }

@@ -1,9 +1,9 @@
 import React from "react";
 import separator from "../../assets/Decoration.svg"
 import {Link, Route, Routes} from "react-router-dom";
-import Foundations from "./Foundations";
-import Organizations from "./Organizations";
-import LocalCollections from "./LocalCollections";
+import Foundations from "./HomeWhoWeHelp/Foundations";
+import Organizations from "./HomeWhoWeHelp/Organizations";
+import LocalCollections from "./HomeWhoWeHelp/LocalCollections";
 
 
 export default function HomeWhoWeHelp() {
