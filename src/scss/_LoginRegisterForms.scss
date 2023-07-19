@@ -1,16 +1,18 @@
-.login {
-
-
-  .login__navBox {
+  .loginRegister__navBox {
     margin: $space-base*2 $space-base*4;
   }
 
-  .login__form {
+  .loginRegister__form {
     display: flex;
     flex-direction: column;
     width: 35%;
     margin: $space-base*10 auto;
     align-items: center;
+
+    button {
+      font-size: 1.125rem;
+      font-weight: 300;
+    }
 
     .form__title {
       font-size: 2.5rem;
@@ -43,7 +45,6 @@
       display: flex;
       justify-content: space-between;
       width: 100%;
-      font-size: 1.125rem;
+      //font-size: 1.125rem;
     }
   }
-}
