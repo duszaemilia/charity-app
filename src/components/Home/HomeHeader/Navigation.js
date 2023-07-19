@@ -1,7 +1,11 @@
 import React from "react";
 import {Link} from "react-scroll";
+import {useSelector} from "react-redux";
 
 export default function Navigation() {
+    const auth = useSelector(store => store.auth);
+
+    console.log(auth)
     return (
         <nav className="mainNav">
             <Link
