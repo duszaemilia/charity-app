@@ -20,11 +20,43 @@
 //
 // export default authSlice.reducer
 
-import { createSlice } from "@reduxjs/toolkit";
+
+//
+// import { createSlice } from "@reduxjs/toolkit";
+//
+// const initialState = {
+//     isLoggedIn: false,
+//     user: null,
+// };
+//
+// const authSlice = createSlice({
+//     name: "auth",
+//     initialState,
+//     reducers: {
+//         loginSuccess: (state, action) => {
+//             state.isLoggedIn = true;
+//             state.user = action.payload;
+//         },
+//         logoutSuccess: (state) => {
+//             state.isLoggedIn = false;
+//             state.user = null;
+//         },
+//     },
+// });
+//
+// export const { loginSuccess, logoutSuccess } = authSlice.actions;
+// export default authSlice.reducer;
+
+
+import {createSlice} from "@reduxjs/toolkit";
 
 const initialState = {
     isLoggedIn: false,
     user: null,
+    email: "",
+    password: "",
+    password2: "",
+    validation: [],
 };
 
 const authSlice = createSlice({
@@ -39,8 +71,36 @@ const authSlice = createSlice({
             state.isLoggedIn = false;
             state.user = null;
         },
+        setEmail: (state, action) => {
+            state.email = action.payload;
+        },
+        setPassword: (state, action) => {
+            state.password = action.payload;
+        },
+        setPassword2: (state, action) => {
+            state.password2 = action.payload;
+        },
+        setValidation: (state, action) => {
+            state.validation = action.payload;
+        },
+        registerUser: (state, action) => {
+            // Tutaj możesz wykonać logikę rejestracji użytkownika, np. zapisanie go w bazie danych.
+            // Dane użytkownika są dostępne w action.payload
+            const userData = action.payload;
+            // Przykład: zapisz dane użytkownika do stanu
+            state.isLoggedIn = true;
+            state.user = userData;
+        },
     },
 });
 
-export const { loginSuccess, logoutSuccess } = authSlice.actions;
+export const {
+    loginSuccess,
+    logoutSuccess,
+    setEmail,
+    setPassword,
+    setPassword2,
+    setValidation,
+    registerUser,
+} = authSlice.actions;
 export default authSlice.reducer;

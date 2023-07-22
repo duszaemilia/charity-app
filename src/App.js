@@ -2,7 +2,7 @@ import React from "react";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
-import Signup from "./pages/Signup";
+import SignUp from "./pages/SignUp";
 import Logout from "./pages/Logout";
 import GiveAwayThings from "./pages/GiveAwayThings";
 
@@ -16,7 +16,7 @@ function App() {
             <Routes>
                 <Route path="/*" element={<Home/>}/>
                 <Route path="/logowanie" element={<Login/>}/>
-                <Route path="/rejestracja" element={<Signup/>}/>
+                <Route path="/rejestracja" element={<SignUp/>}/>
                 <Route path="/wylogowano" element={<Logout/>}/>
                 <Route path="/oddaj-rzeczy/*" element={ <GiveAwayThings /> } />
             </Routes>
