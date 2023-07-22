@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Logout from "./pages/Logout";
+import GiveAwayThings from "./pages/GiveAwayThings";
+
 import {Provider} from "react-redux";
 import {store} from "./redux/store";
 
@@ -16,6 +18,7 @@ function App() {
                 <Route path="/logowanie" element={<Login/>}/>
                 <Route path="/rejestracja" element={<Signup/>}/>
                 <Route path="/wylogowano" element={<Logout/>}/>
+                <Route path="/oddaj-rzeczy/*" element={ <GiveAwayThings /> } />
             </Routes>
         </Router>
         </Provider>

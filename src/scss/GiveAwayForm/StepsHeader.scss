@@ -1,0 +1,13 @@
+.stepsHeader {
+  background-color: $secondary-color2;
+  padding: 2% 7%;
+
+  .stepsHeader__title {
+    font-size: 2.25rem;
+    font-weight: 600;
+  }
+
+  .stepsHeader__description {
+    font-size: 1.375rem;
+  }
+}
