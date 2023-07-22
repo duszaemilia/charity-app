@@ -1,50 +1,60 @@
-  .loginRegister__navBox {
-    margin: $space-base*2 $space-base*4;
+.loginRegister__navBox {
+  margin: $space-base*2 $space-base*4;
+}
+
+.loginRegister__form {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin: $space-base*10 auto;
+  align-items: center;
+
+  button {
+    font-size: 1.125rem;
+    font-weight: 300;
   }
 
-  .loginRegister__form {
-    display: flex;
-    flex-direction: column;
-    width: 35%;
-    margin: $space-base*10 auto;
-    align-items: center;
+  .form__title {
+    font-size: 2.5rem;
+    margin-bottom: $space-base*2;
+    text-align: center;
+  }
 
-    button {
-      font-size: 1.125rem;
-      font-weight: 300;
-    }
+  .separator {
+    margin-bottom: $space-base*4;
+  }
 
-    .form__title {
-      font-size: 2.5rem;
-      margin-bottom: $space-base*2;
-      text-align: center;
-    }
+  .form__inputs {
+    width: 80%;
+    background-color: $white-color;
+    padding: 7% 10% 3%;
+    margin-bottom: $space-base*3;
 
-    .separator {
-      margin-bottom: $space-base*4;
-    }
+    .inputs {
+      display: flex;
+      flex-direction: column;
 
-    .form__inputs {
-      width: 80%;
-      background-color: $white-color;
-      padding: 7% 10%;
-      margin-bottom: $space-base*3;
+      &:not(:last-child) {
+        margin-bottom: $space-base;
+      }
 
-      .inputs {
-        display: flex;
-        flex-direction: column;
+      .error-message {
+        color: red;
+        margin-top: $space-base/5;
+        font-size: 0.8rem;
+        visibility: hidden;
 
-        &:not(:last-child) {
-          margin-bottom: $space-base*3;
+        &.visible {
+          visibility: visible;
         }
-
       }
     }
-
-    .form__buttons {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      //font-size: 1.125rem;
-    }
   }
+
+  .form__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    //font-size: 1.125rem;
+  }
+}
