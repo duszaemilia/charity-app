@@ -3,4 +3,4 @@
 
 ## By filling out the form, you can report your willingness to give away such items.
 
-## Technologies: React, React Router, React Scroll, React Form, SASS, Firebase Auth and Firebase Database.
+## Technologies: React, React Router, React Scroll, React Form, Redux, SASS, Firebase Auth and Firebase Database.

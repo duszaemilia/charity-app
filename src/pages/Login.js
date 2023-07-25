@@ -34,9 +34,9 @@ export default function Login() {
     }
 
 
-    // Przygotowanie obiektu z danymi użytkownika
+    // Przygotowanie obiektu z danymi usera
     const userData = {email, password};
-    // Wywołanie akcji loginSuccess i przekazanie danych użytkownika
+    // Wywołanie akcji loginSuccess i przekazanie danych userra
     dispatch(loginSuccess(userData));
 
 

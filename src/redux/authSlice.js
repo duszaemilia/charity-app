@@ -84,10 +84,10 @@ const authSlice = createSlice({
             state.validation = action.payload;
         },
         registerUser: (state, action) => {
-            // Tutaj możesz wykonać logikę rejestracji użytkownika, np. zapisanie go w bazie danych.
+            // CZy zapisać logikę rejestracji użytkownika w bazie danych??
             // Dane użytkownika są dostępne w action.payload
             const userData = action.payload;
-            // Przykład: zapisz dane użytkownika do stanu
+            // Przykład zapisania danych użytkownika do stanu
             state.isLoggedIn = true;
             state.user = userData;
         },
