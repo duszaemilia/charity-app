@@ -5,7 +5,7 @@ import HomeSimpleSteps from "./HomeSimpleSteps";
 import HomeAbout from "./HomeAbout";
 import HomeWhoWeHelp from "./HomeWhoWeHelp"
 import HomeContact from "./HomeContact"
-import {app} from "../../configs/firebase";
+import {app} from "../../configs/firebaseConfig";
 import { getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged  } from 'firebase/auth';
 import { useAuthState } from 'react-firebase-hooks/auth';
 
@@ -39,9 +39,9 @@ export default function Home() {
     return (
         <>
             <HomeHeader/>
-            {
-                user ? <button onClick={logout}>Log out</button> : <button onClick={login}>Log in</button>
-            }
+            {/*{*/}
+            {/*    user ? <button onClick={logout}>Log out</button> : <button onClick={login}>Log in</button>*/}
+            {/*}*/}
             <HomeThreeColumns/>
             <HomeSimpleSteps/>
             <HomeAbout/>
